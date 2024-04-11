@@ -1,0 +1,11 @@
+{
+  "name": "eth_call_revert_issue_replicator",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "dotenv": "^16.4.5",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.13.0"
+  }
+}

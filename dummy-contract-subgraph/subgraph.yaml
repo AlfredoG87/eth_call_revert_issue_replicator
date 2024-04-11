@@ -1,0 +1,24 @@
+specVersion: 0.0.5
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: DummyContract
+    network: local
+    source:
+      address: '0x2c988802d0411f07f196cb0bc678f12c4d086b6f'
+      abi: DummyContract
+      startBlock: 2755437
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - DummyIdEvent
+      abis:
+        - name: DummyContract
+          file: ./abis/DummyContract.json
+      eventHandlers:
+        - event: DummyIdEvent(indexed int256)
+          handler: handleDummyIdEvent
+      file: ./src/mapping.ts

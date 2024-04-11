@@ -1,0 +1,19 @@
+{
+    "local": {
+        "ExampleHTS": {
+          "address": "0x00000000000000000000000000000000000b2ad5",
+          "startBlock": 45000100
+        }
+    },    
+    "mainnet": {
+      "ExampleHTS": {
+        "address": "0x00000000000000000000000000000000000b2ad5",
+        "startBlock": 45000100
+      }
+    },
+    "previewnet": {
+      "ExampleHTS": {
+        "address": "0x0000000000000000000000000000000000057bf6",
+        "startBlock": 0
+    }
+}

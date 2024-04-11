@@ -1,0 +1,17 @@
+{
+    "name": "saucer-hts-token",
+    "license": "UNLICENSED",
+    "scripts": {
+      "codegen": "graph codegen --skip-migration",
+      "build": "graph build --skip-migration",      
+      "create": "graph create --node http://localhost:8020/ dummy-test",
+      "remove": "graph remove --node http://localhost:8020/ dummy-test",
+      "deploy": "graph deploy --skip-migrations --node http://localhost:8020/ --ipfs http://localhost:5001 dummy-test --version-label v0.0.1",
+      "test": "graph test"
+    },
+    "dependencies": {
+      "@graphprotocol/graph-cli": "0.53.0",
+      "@graphprotocol/graph-ts": "0.31.0"
+    },
+    "devDependencies": { "matchstick-as": "0.5.2" }
+  }

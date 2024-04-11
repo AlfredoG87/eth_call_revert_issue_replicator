@@ -1,0 +1,14 @@
+type DummyIdEvent @entity {
+  id: ID!
+  eventId: BigInt!
+  transactionHash: String!
+  dummyData: DummyData
+}
+
+type DummyData @entity {
+  id: ID!
+  addr1: String!
+  addr2: String!
+  value1: BigInt!
+  value2: BigInt!
+}
